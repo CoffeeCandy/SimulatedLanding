@@ -50,10 +50,7 @@ public class MyLogin {
 		nvps.add(new BasicNameValuePair("password", "234"));
 		post.setEntity(new UrlEncodedFormEntity(nvps));
 		 CloseableHttpResponse response =client.execute(post, context);
-		
 
-			 
-		
 		 List<Cookie> cookies=cookieStore.getCookies();
 		for(Cookie cookie:cookies){
 			if(cookie.getName().equals("JSESSIONID")){
